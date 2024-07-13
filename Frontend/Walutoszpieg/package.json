@@ -10,10 +10,10 @@
     "preview": "vite preview",
     "format": "npx prettier --write ."
   },
-  ,
   "dependencies": {
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.3.0"
   },
   "devDependencies": {
     "@types/react": "^18.3.3",
