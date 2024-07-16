@@ -1,7 +1,7 @@
-# Walutoszpieg - Aplikacja Śledząca Kursy Wymiany Walut z Gromadzeniem Historii
+# Walutoszpieg - Aplikacja Śledząca Kursy Wymiany Walut z Gromadzeniem Historii Transakcji
 
 1.	Opis Aplikacji:
-Aplikacja śledząca kursy wymiany walut z gromadzeniem historii to zaawansowane narzędzie mobilne, które umożliwia użytkownikom monitorowanie kursów walut w czasie rzeczywistym oraz przechowywanie szczegółowej historii wymian. Głównym celem aplikacji jest dostarczenie użytkownikom aktualnych informacji o kursach walut oraz możliwość analizy danych historycznych, co pomaga w podejmowaniu świadomych decyzji finansowych.
+Aplikacja śledząca kursy wymiany walut z gromadzeniem historii to zaawansowane narzędzie, które umożliwia użytkownikom monitorowanie kursów walut oraz przechowywanie szczegółowej historii wymian. Głównym celem aplikacji jest dostarczenie użytkownikom aktualnych informacji o kursach walut oraz możliwość analizy danych historycznych, co pomaga w podejmowaniu świadomych decyzji finansowych.
 
 2.	Kluczowe Funkcje:
 •	Śledzenie Kursów w Czasie Rzeczywistym: Aktualizacja kursów walut na bieżąco, bazująca na danych z globalnych rynków finansowych.
@@ -17,7 +17,7 @@ Aplikacja śledząca kursy wymiany walut z gromadzeniem historii to zaawansowane
 •	Personalizacja: Dopasowanie aplikacji do indywidualnych potrzeb i preferencji użytkownika.
 
 4.	Technologie:
-•	Platformy: Windows
+•	Platforma: Windows
 •	Backend: C#
 •	Frontend: React
 •	Baza Danych: MSSQL
@@ -26,29 +26,24 @@ Aplikacja śledząca kursy wymiany walut z gromadzeniem historii to zaawansowane
 Głównym celem aplikacji śledzącej kursy wymiany walut z gromadzeniem historii jest dostarczenie użytkownikom narzędzia umożliwiającego bieżące monitorowanie kursów walut oraz archiwizację danych historycznych, co pozwala na dokładną analizę trendów rynkowych i podejmowanie świadomych decyzji finansowych. Aplikacja ma za zadanie zapewnić użytkownikom aktualne informacje o kursach walut, zaawansowane funkcje analityczne oraz intuicyjny interfejs, który ułatwia korzystanie z tych danych w codziennym zarządzaniu finansami.
 
 6.	Zestaw Funkcjonalności Walutoszpieg:
-•	Śledzenie Kursów w Czasie Rzeczywistym:
-o	Aktualizacja kursów walut w czasie rzeczywistym.
+•	Śledzenie Kursów walut:
+o	Aktualizacja kursów walut,
 o	Wyświetlanie kursów dla popularnych walut oraz możliwość dodawania innych walut według preferencji użytkownika.
 •	Gromadzenie i Przechowywanie Historii Kursów:
-o	Archiwizacja danych historycznych kursów walut.
+o	Archiwizacja danych historycznych kursów walut,
 o	Przechowywanie historii kursów w różnych interwałach czasowych (dzienne, tygodniowe, miesięczne).
 •	Powiadomienia i Alerty:
-o	Automatyczne powiadomienia o zmianach kursów walut, osiągnięciu określonych progów lub znaczących zmianach rynkowych.
+o	Automatyczne powiadomienia o zmianach kursów walut,
 o	Ustawianie personalizowanych alertów kursów walut przez użytkowników.
 •	Narzędzia Analityczne i Wizualizacja Danych:
-o	Interaktywne wykresy przedstawiające historyczne kursy walut.
-o	Narzędzia do analizy trendów i wzorców w danych historycznych.
+o	Interaktywne wykresy przedstawiające historyczne kursy walut,
 o	Możliwość porównywania kursów różnych walut w wybranym okresie.
 •	Zarządzanie Listą Ulubionych Walut:
 o	Tworzenie i zarządzanie listą ulubionych walut dla szybkiego dostępu.
 o	Szybkie przełączanie między różnymi walutami i ich kursami.
-•	Edukacja i Informacje Rynkowe:
-o	Dostęp do artykułów, analiz rynkowych i edukacyjnych materiałów dotyczących rynku walutowego.
-o	Aktualności i wiadomości z globalnych rynków finansowych.
 •	Dodatkowe Funkcjonalności (opcjonalnie):
-o	Tryb Offline: Możliwość przeglądania zapisanych danych historycznych bez dostępu do internetu.
+o	Tryb Offline: Możliwość przeglądania zapisanych danych historycznych bez dostępu do internetu,
 o	Konwerter Walut: Wbudowany kalkulator do szybkiego przeliczania wartości między różnymi walutami.
-o	Integracja z Kalendarzem Ekonomicznym: Śledzenie ważnych wydarzeń ekonomicznych, które mogą wpływać na kursy walut.
 
 7.	 Plan Realizacji Walutoszpieg:
 Faza 1: Przygotowanie i Planowanie
@@ -85,9 +80,9 @@ o	Testowanie integracji między backendem a frontendem.
 o	Testowanie aplikacji jako całości.
 
 Harmonogram:
-•	Faza 1: 2 dni
-•	Faza 2: 2 dni
-•	Faza 3: 5 dni
-•	Faza 4: 3 dni
+•	Faza 1: 1 dni
+•	Faza 2: 1 dni
+•	Faza 3: 4 dni
+•	Faza 4: 2 dni
 
-Projekt zakłada realizację aplikacji w ciągu 12 dni, z uwzględnieniem etapów planowania, projektowania, rozwoju, testowania.
+Projekt zakłada realizację aplikacji w ciągu 8 dni, z uwzględnieniem etapów planowania, projektowania, rozwoju, testowania.

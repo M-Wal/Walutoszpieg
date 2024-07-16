@@ -18,6 +18,7 @@ namespace Walutoszpieg
             builder.Services.AddScoped<HistoricalExchangeRateRepository>();
             builder.Services.AddScoped<NotificationRepository>();
             builder.Services.AddScoped<TransactionHistoryRepository>();
+            builder.Services.AddScoped<WalletRepository>();
 
             builder.Services.AddCors(options =>
             {
