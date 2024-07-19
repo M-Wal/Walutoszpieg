@@ -84,7 +84,27 @@ export const addOrUpdateWallet = async (wallet) => {
         },
         body: JSON.stringify(wallet)
     });
-};;
+};
+
+export const fetchTransactionHistories = async () => {
+    const response = await fetch('https://localhost:7107/api/transactionHistory'); // Adjust the URL according to your backend endpoint
+    const data = await response.json();
+    return data;
+};
+
+export const createTransaction = async (transaction) => {
+    const response = await fetch('https://localhost:7107/api/transactionHistory', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(transaction)
+    });
+    if (!response.ok) {
+        throw new Error('Failed to create transaction');
+    }
+    return response.json();
+};
 
 export const fetchCurrencyRates = async () => {
     const response = await fetch('https://api.nbp.pl/api/exchangerates/tables/A?format=json');

@@ -11,6 +11,7 @@ const Main = () => {
             <UserSelect onUserSelected={(userId, userName, email) => console.log('User selected:', userId, userName, email)} />
             <Link to="/userwallet" > Idź do portfela użytkownika </Link>
             <Link to="/currency" > Lista walut - trendy </Link>
+            <Link to="/history">Historia transakcji wymiany walut</Link>
         </div>
     );
 };

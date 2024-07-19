@@ -5,16 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="87673fd4-f17d-40d1-adf3-35b409cb48f5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../Backend/Walutoszpieg/Controllers/WalletController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Backend/Walutoszpieg/Controllers/WalletController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Walutoszpieg/src/components/TransactionHistory.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/Walutoszpieg/Controllers/TransactionHistoryController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Backend/Walutoszpieg/Controllers/TransactionHistoryController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Backend/Walutoszpieg/Model/TransactionHistory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Backend/Walutoszpieg/Model/TransactionHistory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Backend/Walutoszpieg/Model/Wallet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Backend/Walutoszpieg/Model/Wallet.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Backend/Walutoszpieg/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Backend/Walutoszpieg/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Backend/Walutoszpieg/Repositories/WalletRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Backend/Walutoszpieg/Repositories/WalletRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/Walutoszpieg/Repositories/TransactionHistoryRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Backend/Walutoszpieg/Repositories/TransactionHistoryRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/Walutoszpieg/Repositories/UserRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Backend/Walutoszpieg/Repositories/UserRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Walutoszpieg/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Walutoszpieg/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Walutoszpieg/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Walutoszpieg/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Walutoszpieg/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Walutoszpieg/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Walutoszpieg/src/main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Walutoszpieg/src/main.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Walutoszpieg/src/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/Walutoszpieg/src/api/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Walutoszpieg/src/components/UserWallet.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Walutoszpieg/src/components/UserWallet.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Walutoszpieg/src/pages/Main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Walutoszpieg/src/pages/Main.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

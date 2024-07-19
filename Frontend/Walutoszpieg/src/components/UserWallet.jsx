@@ -1,15 +1,14 @@
 import React, { useEffect, useState } from 'react';
-import { getUserWallets, addOrUpdateWallet, deleteWallet, convertCurrency } from '../api/api';
-import { fetchCurrencyRates } from '../api/api';
+import { getUserWallets, addOrUpdateWallet, deleteWallet, convertCurrency, fetchCurrencyRates, createTransaction } from '../api/api';
 
 const UserWallet = ({ userId }) => {
     const [wallets, setWallets] = useState([]);
     const [currencyRates, setCurrencyRates] = useState([]);
     const [newCurrency, setNewCurrency] = useState('');
-    const [newAmount, setNewAmount] = useState(undefined);
+    const [newAmount, setNewAmount] = useState(0);
     const [fromCurrency, setFromCurrency] = useState('');
     const [toCurrency, setToCurrency] = useState('');
-    const [convertAmount, setConvertAmount] = useState(undefined);
+    const [convertAmount, setConvertAmount] = useState(0);
     const [convertedAmount, setConvertedAmount] = useState(null);
     const [error, setError] = useState('');
 
@@ -33,6 +32,10 @@ const UserWallet = ({ userId }) => {
             return;
         }
 
+        if (!newCurrency) {
+            setError('Nie wybrano waluty');
+            return;
+        }
         const wallet = { userId, currencyCode: newCurrency, amount: parseFloat(newAmount) };
         await addOrUpdateWallet(wallet);
         const updatedWallets = await getUserWallets(userId);
@@ -48,12 +51,22 @@ const UserWallet = ({ userId }) => {
     const handleConvertCurrency = async () => {
 
         const fromWallet = wallets.find(wallet => wallet.currencyCode === fromCurrency);
+
+        if (!fromCurrency || !toCurrency) {
+            setError('Nie wybrano waluty');
+            return;
+        }
+
         if (!fromWallet || fromWallet.amount < convertAmount) {
             setError('Niewystarczające środki w wybranej walucie na wykonanie transakcji');
             return;
         }
 
+        const fromRate = currencyRates.find(rate => rate.code === fromCurrency).mid;
+        const toRate = currencyRates.find(rate => rate.code === toCurrency).mid;
+        const converted = parseFloat(convertAmount) * (fromRate / toRate);
         setError('');
+
         const request = {
             userId,
             fromCurrency,
@@ -62,10 +75,20 @@ const UserWallet = ({ userId }) => {
         };
 
         await convertCurrency(request);
+
+        const transaction = {
+            userId,
+            fromCurrency,
+            toCurrency,
+            amount: parseFloat(convertAmount),
+            rate: fromRate / toRate,
+            timestamp: new Date().toISOString()
+        };
+        await createTransaction(transaction);
+
         const updatedWallets = await getUserWallets(userId);
         setWallets(updatedWallets);
-        const converted = request.amount * (currencyRates.find(rate => rate.code === fromCurrency).mid / currencyRates.find(rate => rate.code === toCurrency).mid)
-        setConvertedAmount(parseFloat(converted.toFixed(2)));
+        setConvertedAmount(converted.toFixed(2));
     };
 
     return (
@@ -96,7 +119,7 @@ const UserWallet = ({ userId }) => {
                 ))}
             </ul>
             <div>
-                <h3>Wymiana walut</h3>-
+                <h3>Wymiana walut</h3>
                 <select value={fromCurrency} onChange={(e) => setFromCurrency(e.target.value)}>
                     <option value="">Waluta bazowa</option>
                     {wallets.map(wallet => (
@@ -117,13 +140,14 @@ const UserWallet = ({ userId }) => {
                 </select>
 
                 <button onClick={handleConvertCurrency}>Wymień</button>
+
                 {convertedAmount !== null && (
                     <div>
                         <p>Kupiono: {convertedAmount} {toCurrency} </p>
                     </div>
                 )}
                 {error && (
-                    <div style={{color: 'red'}}>
+                    <div style={{ color: 'red' }}>
                         <p>{error}</p>
                     </div>
                 )}

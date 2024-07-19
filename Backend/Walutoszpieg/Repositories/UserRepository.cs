@@ -17,7 +17,6 @@ namespace Walutoszpieg.Repositories
         {
             using (var db = _context.CreateConnection())
             {
-                Dapper.DefaultTypeMap.MatchNamesWithUnderscores = true;
                 return await db.QueryAsync<User>("SELECT * FROM users");
             }
         }

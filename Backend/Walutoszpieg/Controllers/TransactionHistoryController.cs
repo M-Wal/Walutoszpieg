@@ -1,60 +1,63 @@
 ﻿using Walutoszpieg.Repositories;
+using Microsoft.AspNetCore.Mvc;
+using Walutoszpieg.Model;
 
 namespace Walutoszpieg.Controllers
 {
-    using Microsoft.AspNetCore.Mvc;
-    using System.Collections.Generic;
-    using System.Threading.Tasks;
-    using Walutoszpieg.Model;
-
-    [Route("api/[controller]")]
     [ApiController]
+    [Route("api/[controller]")]
     public class TransactionHistoryController : ControllerBase
     {
-        private readonly TransactionHistoryRepository _transactionHistory;
+        private readonly TransactionHistoryRepository _repository;
 
-        public TransactionHistoryController(TransactionHistoryRepository transactionHistory)
+        public TransactionHistoryController(TransactionHistoryRepository repository)
         {
-            _transactionHistory = transactionHistory;
+            _repository = repository;
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<TransactionHistory>>> GetTransactionHistory()
+        public async Task<IActionResult> GetTransactionHistories()
         {
-            var TransactionHistory = await _transactionHistory.GetTransactionHistoriesAsync();
-            return Ok(TransactionHistory);
+            var histories = await _repository.GetTransactionHistoriesAsync();
+            return Ok(histories);
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<TransactionHistory>> GetTransactionHistory(int id)
+        public async Task<IActionResult> GetTransactionHistoryById(int id)
         {
-            var transactionHistory = await _transactionHistory.GetTransactionHistoryByIdAsync(id);
-            if (transactionHistory == null) return NotFound();
-            return Ok(transactionHistory);
+            var history = await _repository.GetTransactionHistoryByIdAsync(id);
+            if (history == null)
+            {
+                return NotFound();
+            }
+            return Ok(history);
         }
 
         [HttpPost]
-        public async Task<ActionResult<TransactionHistory>> CreateTransactionHistory(TransactionHistory transactionHistory)
+        public async Task<IActionResult> CreateTransactionHistory(TransactionHistory transactionHistory)
         {
-            transactionHistory.Id = await _transactionHistory.CreateTransactionHistoryAsync(transactionHistory);
-            return CreatedAtAction(nameof(GetTransactionHistory), new { id = transactionHistory.Id }, transactionHistory);
+            var id = await _repository.CreateTransactionHistoryAsync(transactionHistory);
+            transactionHistory.Id = id;
+            return CreatedAtAction(nameof(GetTransactionHistoryById), new { id = id }, transactionHistory);
         }
 
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateTransactionHistory(int id, TransactionHistory transactionHistory)
         {
-            if (id != transactionHistory.Id) return BadRequest();
-            var affectedRows = await _transactionHistory.UpdateTransactionHistoryAsync(transactionHistory);
-            if (affectedRows == 0) return NotFound();
+            if (id != transactionHistory.Id)
+            {
+                return BadRequest();
+            }
+            await _repository.UpdateTransactionHistoryAsync(transactionHistory);
             return NoContent();
         }
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteTransactionHistory(int id)
         {
-            var affectedRows = await _transactionHistory.DeleteTransactionHistoryAsync(id);
-            if (affectedRows == 0) return NotFound();
+            await _repository.DeleteTransactionHistoryAsync(id);
             return NoContent();
         }
     }
+
 }
