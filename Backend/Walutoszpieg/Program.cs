@@ -45,6 +45,8 @@ namespace Walutoszpieg
 
             app.UseHttpsRedirection();
 
+            app.UseCors("CorsPolicy");
+
             app.UseAuthorization();
 
 
