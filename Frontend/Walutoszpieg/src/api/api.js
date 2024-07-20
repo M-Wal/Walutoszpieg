@@ -1,5 +1,6 @@
 const urlUser = 'https://localhost:7107/api/User';
 const urlWallet = 'https://localhost:7107/api/Wallet';
+const urlTransaction = 'https://localhost:7107/api/transactionHistory';
 
 export const fetchUsers = async () => {
     const response = await fetch(`${urlUser}`);
@@ -87,13 +88,13 @@ export const addOrUpdateWallet = async (wallet) => {
 };
 
 export const fetchTransactionHistories = async () => {
-    const response = await fetch('https://localhost:7107/api/transactionHistory');
+    const response = await fetch(`${urlTransaction}`);
     const data = await response.json();
     return data;
 };
 
 export const createTransaction = async (transaction) => {
-    const response = await fetch('https://localhost:7107/api/transactionHistory', {
+    const response = await fetch(`${urlTransaction}`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

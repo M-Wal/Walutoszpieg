@@ -24,7 +24,7 @@ CurrencyExchangeApp ma na celu dostarczenie użytkownikom narzędzi do zarządza
 5.	Zestaw Funkcjonalności Walutoszpieg:
 •	Śledzenie Kursów walut:
 o	Aktualizacja kursów walut,
-o	Wyświetlanie kursów dla popularnych walut.
+o	Prezentacja kursów dla popularnych walut.
 •	Narzędzia Analityczne i Wizualizacja Danych:
 o	Możliwość porównywania kursów różnych walut w wybranym okresie.
 •	Zarządzanie Listą Ulubionych Walut:
@@ -34,6 +34,13 @@ o	Szybkie przełączanie między różnymi użytkownikami.
 o	Konwerter Walut: Wbudowany kalkulator do szybkiego przeliczania wartości między różnymi walutami.
 
 6. Instrukcja uruchomienia
+• Stwórz bazę danych i dodaj przykładowych użytkowników - skrypt CreateDatabase.sql
+• W katalogu Backend/Walutoszpieg zaktualizuj plik appsettings.json o prawidłowy connection string do bazy danych
+• Uruchom i przetestuj backend
+• W katalogu Frontend/Walutoszpieg/src/api zaktualizuj port serwera - sprawdź w swagger
+• Uruchom frontend npm run dev i baw się do woli :)
+
+-----------------------------------------------------------------------------------
 
 7.	 Plan Realizacji Walutoszpieg:
 Faza 1: Przygotowanie i Planowanie
@@ -60,7 +67,6 @@ o	Implementacja interfejsu użytkownika na platformie Windows.
 o	Implementacja funkcji śledzenia kursów w czasie rzeczywistym i analiz.
 3.	Gromadzenie Historii
 o	Implementacja funkcji archiwizacji i przechowywania danych historycznych.
-
 
 Faza 4: Testowanie
 1.	Testy Jednostkowe i Integracyjne

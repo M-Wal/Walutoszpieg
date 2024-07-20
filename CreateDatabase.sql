@@ -1,3 +1,7 @@
+CREATE database Walutoszpieg
+
+use Walutoszpieg
+
 CREATE TABLE users (
     id INT PRIMARY KEY IDENTITY(1,1),
     username VARCHAR(50) UNIQUE NOT NULL,
@@ -24,3 +28,7 @@ CREATE TABLE transaction_history (
     rate DECIMAL(18, 6) NOT NULL,
     timestamp DATETIME NOT NULL
 );
+
+INSERT INTO users (username, email, password_hash)
+VALUES ('Marcin', 'Marcin@op.pl', 'QW!QW!'),
+ ('Radek', 'Radeczek@wp.pl', 'ZX#ZX#');
