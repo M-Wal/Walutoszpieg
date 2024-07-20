@@ -1,6 +1,7 @@
 ﻿using Dapper;
 using Walutoszpieg.Model;
 using Walutoszpieg.DAL;
+using Walutoszpieg.DTO;
 
 namespace Walutoszpieg.Repositories
 {
@@ -13,19 +14,19 @@ namespace Walutoszpieg.Repositories
             _context = context;
         }
         
-        public async Task<IEnumerable<User>> GetUsersAsync()
+        public async Task<IEnumerable<UserDto>> GetUsersAsync()
         {
             using (var db = _context.CreateConnection())
             {
-                return await db.QueryAsync<User>("SELECT * FROM users");
+                return await db.QueryAsync<UserDto>("SELECT * FROM users");
             }
         }
 
-        public async Task<User> GetUserByIdAsync(int id)
+        public async Task<UserDto> GetUserByIdAsync(int id)
         {
             using (var db = _context.CreateConnection())
             {
-                return await db.QueryFirstOrDefaultAsync<User>("SELECT * FROM users WHERE id = @Id", new { Id = id });
+                return await db.QueryFirstOrDefaultAsync<UserDto>("SELECT * FROM users WHERE id = @Id", new { Id = id });
             }
         }
 

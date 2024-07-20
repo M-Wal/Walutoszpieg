@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using Walutoszpieg.DTO;
 using Walutoszpieg.Model;
 using Walutoszpieg.Repositories;
 
@@ -12,19 +13,19 @@ namespace Walutoszpieg.Controllers
     {
         private readonly UserRepository _user;
 
-        public UserController(UserRepository user)
+        public UserController(UserRepository UserDto)
         {
-            _user = user;
+            _user = UserDto;
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<User>>> GetUsers()
+        public async Task<ActionResult<IEnumerable<UserDto>>> GetUsers()
         {
             return Ok(await _user.GetUsersAsync());
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<User>> GetUser(int id)
+        public async Task<ActionResult<UserDto>> GetUser(int id)
         {
             var user = await _user.GetUserByIdAsync(id);
             if (user == null) return NotFound();

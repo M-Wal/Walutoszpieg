@@ -1,20 +1,19 @@
-# Walutoszpieg - Aplikacja Śledząca Kursy Wymiany Walut z Gromadzeniem Historii Transakcji
+# Walutoszpieg - Sledź i zarządaj walutami w łatwy sposób. Sprawdzaj bieżące kursy aby podjąć właściwe decyzje.
 
-1.	Opis Aplikacji:
-Aplikacja śledząca kursy wymiany walut z gromadzeniem historii to zaawansowane narzędzie, które umożliwia użytkownikom monitorowanie kursów walut oraz przechowywanie szczegółowej historii wymian. Głównym celem aplikacji jest dostarczenie użytkownikom aktualnych informacji o kursach walut oraz możliwość analizy danych historycznych, co pomaga w podejmowaniu świadomych decyzji finansowych.
+1.	Cel aplikacji: 
+CurrencyExchangeApp ma na celu dostarczenie użytkownikom narzędzi do zarządzania portfelem walutowym, śledzenia aktualnych kursów walut, analizowania krótkoterminowych trendów oraz rejestrowania historii wymian walut. Aplikacja jest przeznaczona zarówno dla osób indywidualnych, jak i małych firm, które chcą efektywnie zarządzać swoimi finansami międzynarodowymi.
 
-2.	Kluczowe Funkcje:
-•	Śledzenie Kursów w Czasie Rzeczywistym: Aktualizacja kursów walut na bieżąco, bazująca na danych z globalnych rynków finansowych.
-•	Gromadzenie Historii Kursów: Archiwizacja danych historycznych kursów walut, umożliwiająca analizę trendów i zmian w czasie.
-•	Intuicyjny Interfejs: Prosty i przejrzysty design, ułatwiający użytkownikom dostęp do potrzebnych informacji.
-•	Powiadomienia: Automatyczne powiadomienia o osiągnięciu określonych kursów walut lub znaczących zmianach rynkowych.
-•	Analiza Danych: Narzędzia analityczne do wizualizacji danych historycznych, umożliwiające identyfikację trendów i wzorców.
-•	Personalizacja: Możliwość dostosowania preferencji walutowych oraz interwałów czasowych wyświetlanych danych.
+2.	Kluczowe funkcje
+• Aktualne kursy walut - Użytkownicy mogą sprawdzić najnowsze kursy walut, które są pobierane bezpośrednio z API Narodowego Banku Polskiego (NBP). Kursy są aktualizowane na bieżąco, co pozwala na podejmowanie świadomych decyzji finansowych.
+• Krótkoterminowa analiza kursów walut - Aplikacja oferuje narzędzia do analizy krótkoterminowych trendów walutowych, dzięki czemu użytkownicy mogą monitorować wahania kursów i przewidywać ich przyszłe zmiany. Umożliwia to lepsze planowanie zakupów i sprzedaży walut.
+• Portfel walutowy - Użytkownicy mogą stworzyć i zarządzać swoim portfelem walutowym, dodając różne waluty oraz monitorując ich ilość i wartość. Portfel jest przechowywany w bezpieczny sposób, a jego zawartość jest łatwa do przeglądania i aktualizacji.
+• Historia wymian walut - Aplikacja umożliwia rejestrowanie wszystkich transakcji wymiany walut, co pozwala na śledzenie historii operacji finansowych. Użytkownicy mogą przeglądać szczegóły każdej transakcji, w tym datę, kurs wymiany, ilość i walutę.
+• Analiza zmian kursu - Użytkownicy mogą sprawdzić rekomendacje, które będą informować o zmianach kursów walut. Pozwala to na szybką reakcję na korzystne zmiany na rynku walutowym.
 
 3.	Korzyści dla Użytkowników:
-•	Aktualność i Dokładność: Bieżące informacje o kursach walut, co pozwala na szybkie reagowanie na zmiany rynkowe.
-•	Świadome Decyzje: Możliwość analizy historycznych danych kursów walut, co pomaga w podejmowaniu lepiej poinformowanych decyzji finansowych.
-•	Personalizacja: Dopasowanie aplikacji do indywidualnych potrzeb i preferencji użytkownika.
+•	Dostęp do aktualnych kursów walut - Użytkownicy mają dostęp do najnowszych kursów walut, co pozwala im na podejmowanie lepszych decyzji finansowych
+•	Efektywne zarządzanie portfelem - Możliwość tworzenia i zarządzania portfelem walutowym pozwala użytkownikom na śledzenie wartości ich aktywów w różnych walutach
+•	Śledzenie historii transakcji - Rejestracja i przegląd historii wymian walut pomaga użytkownikom w monitorowaniu ich operacji finansowych i analizowaniu ich wyników
 
 4.	Technologie:
 •	Platforma: Windows
@@ -22,28 +21,19 @@ Aplikacja śledząca kursy wymiany walut z gromadzeniem historii to zaawansowane
 •	Frontend: React
 •	Baza Danych: MSSQL
 
-5.	 Cel Aplikacji 
-Głównym celem aplikacji śledzącej kursy wymiany walut z gromadzeniem historii jest dostarczenie użytkownikom narzędzia umożliwiającego bieżące monitorowanie kursów walut oraz archiwizację danych historycznych, co pozwala na dokładną analizę trendów rynkowych i podejmowanie świadomych decyzji finansowych. Aplikacja ma za zadanie zapewnić użytkownikom aktualne informacje o kursach walut, zaawansowane funkcje analityczne oraz intuicyjny interfejs, który ułatwia korzystanie z tych danych w codziennym zarządzaniu finansami.
-
-6.	Zestaw Funkcjonalności Walutoszpieg:
+5.	Zestaw Funkcjonalności Walutoszpieg:
 •	Śledzenie Kursów walut:
 o	Aktualizacja kursów walut,
-o	Wyświetlanie kursów dla popularnych walut oraz możliwość dodawania innych walut według preferencji użytkownika.
-•	Gromadzenie i Przechowywanie Historii Kursów:
-o	Archiwizacja danych historycznych kursów walut,
-o	Przechowywanie historii kursów w różnych interwałach czasowych (dzienne, tygodniowe, miesięczne).
-•	Powiadomienia i Alerty:
-o	Automatyczne powiadomienia o zmianach kursów walut,
-o	Ustawianie personalizowanych alertów kursów walut przez użytkowników.
+o	Wyświetlanie kursów dla popularnych walut.
 •	Narzędzia Analityczne i Wizualizacja Danych:
-o	Interaktywne wykresy przedstawiające historyczne kursy walut,
 o	Możliwość porównywania kursów różnych walut w wybranym okresie.
 •	Zarządzanie Listą Ulubionych Walut:
 o	Tworzenie i zarządzanie listą ulubionych walut dla szybkiego dostępu.
-o	Szybkie przełączanie między różnymi walutami i ich kursami.
+o	Szybkie przełączanie między różnymi użytkownikami.
 •	Dodatkowe Funkcjonalności (opcjonalnie):
-o	Tryb Offline: Możliwość przeglądania zapisanych danych historycznych bez dostępu do internetu,
 o	Konwerter Walut: Wbudowany kalkulator do szybkiego przeliczania wartości między różnymi walutami.
+
+6. Instrukcja uruchomienia
 
 7.	 Plan Realizacji Walutoszpieg:
 Faza 1: Przygotowanie i Planowanie
@@ -67,10 +57,10 @@ o	Implementacja serwera i API do obsługi danych kursów walut.
 o	Integracja z zewnętrznymi źródłami danych finansowych.
 2.	Rozwój Frontend
 o	Implementacja interfejsu użytkownika na platformie Windows.
-o	Implementacja funkcji śledzenia kursów w czasie rzeczywistym i powiadomień.
+o	Implementacja funkcji śledzenia kursów w czasie rzeczywistym i analiz.
 3.	Gromadzenie Historii
 o	Implementacja funkcji archiwizacji i przechowywania danych historycznych.
-o	Tworzenie narzędzi do wizualizacji i analizy danych.
+
 
 Faza 4: Testowanie
 1.	Testy Jednostkowe i Integracyjne
@@ -86,3 +76,28 @@ Harmonogram:
 •	Faza 4: 2 dni
 
 Projekt zakłada realizację aplikacji w ciągu 8 dni, z uwzględnieniem etapów planowania, projektowania, rozwoju, testowania.
+
+MOSCOW:
+
+1) Must-Have (Funkcje niezbędne):
+Moduł użytkownika:
+    Profil użytkownika (3 story point)
+    Kalkulator walutowy (3)
+Portfele walutowe:
+    Możliwość dodawania i usuwania walut (3)
+    Przeglądanie sald walutowych (1)
+    Historia transakcji wymiany walut (3)
+Wymiana walut:
+    Przeliczanie kwot między różnymi walutami (5)
+    Aktualne kursy walut pobierane z API NBP: (3) https://api.nbp.pl/api/exchangerates/tables/A?format=json
+    Możliwość wykonania transakcji wymiany walut (5)
+Alerty o zmianie kursu waluty:
+Prezentowanie alertów dla wybranych walut (3)
+
+2) Should-Have (Funkcje pożądane):
+Wykresy historyczne kursów walut (8)
+Powiadomienia o zmianach kursu waluty w aplikacji (3)
+
+3) Could-Have (Funkcje opcjonalne):
+Inne źródła kursów walut (5)
+Powiadomienia o zmianach kursu waluty na email (3)

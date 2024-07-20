@@ -11,11 +11,11 @@ const UserManagementPage = () => {
     };
 
     const handleUserCreated = () => {
-        setSelectedUser(null); // Reset form after user is created
+        setSelectedUser(null); 
     };
 
     const handleUserUpdated = () => {
-        setSelectedUser(null); // Reset form after user is updated
+        setSelectedUser(null); 
     };
 
     return (

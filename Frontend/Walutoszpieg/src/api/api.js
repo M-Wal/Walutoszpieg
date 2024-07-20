@@ -87,7 +87,7 @@ export const addOrUpdateWallet = async (wallet) => {
 };
 
 export const fetchTransactionHistories = async () => {
-    const response = await fetch('https://localhost:7107/api/transactionHistory'); // Adjust the URL according to your backend endpoint
+    const response = await fetch('https://localhost:7107/api/transactionHistory');
     const data = await response.json();
     return data;
 };
@@ -113,7 +113,7 @@ export const fetchCurrencyRates = async () => {
     }
 
     const data = await response.json();
-    // Dodanie waluty PLN z kursem 1
+
     const pln = {
         currency: 'polski złoty',
         code: 'PLN',

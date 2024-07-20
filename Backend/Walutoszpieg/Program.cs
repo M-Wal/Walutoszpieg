@@ -13,12 +13,7 @@ namespace Walutoszpieg
 
             // Add services to the container.
             builder.Services.AddSingleton<DapperContext>();
-            builder.Services.AddScoped<AlertRepository>();
-            builder.Services.AddScoped<CurrencyRepository>();
             builder.Services.AddScoped<UserRepository>();
-            builder.Services.AddScoped<ExchangeRateRepository>();
-            builder.Services.AddScoped<HistoricalExchangeRateRepository>();
-            builder.Services.AddScoped<NotificationRepository>();
             builder.Services.AddScoped<TransactionHistoryRepository>();
             builder.Services.AddScoped<WalletRepository>();
 
@@ -50,7 +45,6 @@ namespace Walutoszpieg
             app.UseCors("CorsPolicy");
 
             app.UseAuthorization();
-
 
             app.MapControllers();
 
