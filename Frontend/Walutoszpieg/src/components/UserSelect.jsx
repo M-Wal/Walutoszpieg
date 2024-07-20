@@ -9,10 +9,8 @@ const UserSelect = ({ onUserSelected }) => {
             try {
                 const data = await fetchUsers();
                 setUsers(data);
-                console.log(fetchUsers());
             } catch (error) {
                 console.error('Error fetching users from api:', error);
-                console.log(fetchUsers())
             }
         };
 

@@ -12,14 +12,20 @@ const CurrencyItem = ({ currency }) => {
     };
 
     return (
-        <div>
-            <h3>{currency.currency} ({currency.code})</h3>
-            <p style={style}>
-                {lastRate.toFixed(4)} PLN
-                {!isAboveAverage ? ' - rozważ zakup' : ''}
-            </p>
-            <Link to={`/currency/${currency.code}`}>View History</Link>
-        </div>
+        <table className="table-container">
+            <tbody >
+                <td>
+                    <tr>{currency.currency} ({currency.code})</tr>
+                    <tr style={style}>
+                        {lastRate.toFixed(4)} PLN
+                        {!isAboveAverage ? ' - rozważ zakup' : ''}
+                    </tr>
+                    <tr>
+                        <Link to={`/currency/${currency.code}`}>Zobacz historię</Link>
+                    </tr>
+                </td>
+            </tbody>
+        </table>
     );
 };
 

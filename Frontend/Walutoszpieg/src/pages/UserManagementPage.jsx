@@ -3,7 +3,7 @@ import UserList from '../components/UserList';
 import UserForm from '../components/UserForm';
 import UserEdit from '../components/UserEdit';
 
-const UserManagement = () => {
+const UserManagementPage = () => {
     const [selectedUser, setSelectedUser] = useState(null);
 
     const handleUserSelected = (user) => {
@@ -19,7 +19,7 @@ const UserManagement = () => {
     };
 
     return (
-        <div>
+        <div className="main-container">
             <h1>Zarządzanie użytkownikami</h1>
             <UserForm onUserCreated={handleUserCreated} />
             <UserList onUserSelected={handleUserSelected} />
@@ -28,4 +28,4 @@ const UserManagement = () => {
     );
 };
 
-export default UserManagement;
+export default UserManagementPage;

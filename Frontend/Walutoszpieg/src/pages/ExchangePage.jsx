@@ -4,7 +4,7 @@ import CurrencyConverter from '../components/CurrencyConverter';
 
 const ExchangePage = () => {
     return (
-        <div>
+        <div className="main-container">
             <h1>Currency Exchange</h1>
             <CurrencyConverter />
             <CurrencyList />

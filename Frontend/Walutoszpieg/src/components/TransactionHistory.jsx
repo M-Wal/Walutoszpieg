@@ -47,7 +47,7 @@ const TransactionHistory = () => {
     }, [selectedUser, currencyFilter, dateFilter]);
 
     return (
-        <div>
+        <div className="main-container">
             <h2>Historia transakcji wymiany walut</h2>
             <div>
                 <h4>Filtrowanie wyników:</h4>
@@ -78,8 +78,8 @@ const TransactionHistory = () => {
                 </label>
             </div>
             <br />
-            <table>
-                <thead>
+            <table className="table-container">
+                <tbody className="table">
                     <tr>
                         <th>Waluta bazowa</th>
                         <th>Waluta docelowa</th>
@@ -87,14 +87,13 @@ const TransactionHistory = () => {
                         <th>Kurs wymiany</th>
                         <th>Data wymiany</th>
                     </tr>
-                </thead>
-                <tbody>
+                
                     {filteredTransactions.map(transaction => (
                         <tr key={transaction.id}>
                             <td>{transaction.fromCurrency}</td>
                             <td>{transaction.toCurrency}</td>
-                            <td>{transaction.amount}</td>
-                            <td>{transaction.rate}</td>
+                            <td>{transaction.amount.toFixed(2)}</td>
+                            <td>{transaction.rate.toFixed(4)}</td>
                             <td>{format(parseISO(transaction.timestamp), 'yyyy-MM-dd HH:mm:ss')}</td>
                         </tr>
                     ))}

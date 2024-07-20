@@ -5,19 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="87673fd4-f17d-40d1-adf3-35b409cb48f5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Walutoszpieg/src/components/TransactionHistory.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Backend/Walutoszpieg/Controllers/TransactionHistoryController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Backend/Walutoszpieg/Controllers/TransactionHistoryController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Backend/Walutoszpieg/Model/TransactionHistory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Backend/Walutoszpieg/Model/TransactionHistory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Backend/Walutoszpieg/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Backend/Walutoszpieg/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Backend/Walutoszpieg/Repositories/TransactionHistoryRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Backend/Walutoszpieg/Repositories/TransactionHistoryRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Backend/Walutoszpieg/Repositories/UserRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Backend/Walutoszpieg/Repositories/UserRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Walutoszpieg/src/pages/UserWalletPage.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Walutoszpieg/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Walutoszpieg/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Walutoszpieg/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Walutoszpieg/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Walutoszpieg/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/Walutoszpieg/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Walutoszpieg/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Walutoszpieg/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Walutoszpieg/src/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/Walutoszpieg/src/api/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Walutoszpieg/src/components/CurrencyConverter.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Walutoszpieg/src/components/CurrencyConverter.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Walutoszpieg/src/components/CurrencyDetails.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Walutoszpieg/src/components/CurrencyDetails.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Walutoszpieg/src/components/CurrencyHistory.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Walutoszpieg/src/components/CurrencyHistory.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Walutoszpieg/src/components/CurrencyItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Walutoszpieg/src/components/CurrencyItem.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Walutoszpieg/src/components/CurrencyList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Walutoszpieg/src/components/CurrencyList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Walutoszpieg/src/components/TransactionHistory.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Walutoszpieg/src/components/TransactionHistory.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Walutoszpieg/src/components/UserList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Walutoszpieg/src/components/UserList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Walutoszpieg/src/components/UserSelect.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Walutoszpieg/src/components/UserSelect.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Walutoszpieg/src/components/UserWallet.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Walutoszpieg/src/components/UserWallet.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Walutoszpieg/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/Walutoszpieg/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Walutoszpieg/src/pages/Currency.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Walutoszpieg/src/pages/CurrencyPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Walutoszpieg/src/pages/ExchangePage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Walutoszpieg/src/pages/ExchangePage.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Walutoszpieg/src/pages/Main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Walutoszpieg/src/pages/Main.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Walutoszpieg/src/pages/UserManagement.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Walutoszpieg/src/pages/UserManagementPage.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,6 +75,7 @@
       <workItem from="1721290530268" duration="188000" />
       <workItem from="1721303455970" duration="26000" />
       <workItem from="1721303590133" duration="22180000" />
+      <workItem from="1721464147637" duration="2438000" />
     </task>
     <servers />
   </component>

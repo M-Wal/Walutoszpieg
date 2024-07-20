@@ -93,7 +93,7 @@ const UserWallet = ({ userId }) => {
 
     return (
         <div>
-            <h2>Portfel walutowy użytkownika {userId}</h2>
+            <br />
             <div>
                 <input
                     type="number"
@@ -110,14 +110,24 @@ const UserWallet = ({ userId }) => {
 
                 <button onClick={handleAddOrUpdateWallet}>Dodaj walutę/zaktualizuj stan portfela</button>
             </div>
-            <ul>
-                {wallets.map(wallet => (
-                    <li key={wallet.currencyCode}>
-                        {wallet.currencyCode}: {wallet.amount}
-                        <button onClick={() => handleDeleteWallet(wallet.currencyCode)}>Usuń</button>
-                    </li>
-                ))}
-            </ul>
+            <table className="table-container">
+                <tbody className="table">
+                    <tr>
+                        <th>Waluta</th>
+                        <th>Kwota</th>
+                        <th>Akcja</th>
+                    </tr>
+                    {wallets.map(wallet => (
+                        <tr key={wallet.currencyCode}>
+                            <td>{wallet.currencyCode}</td>
+                            <td>{wallet.amount}</td>
+                            <td>
+                                <button onClick={() => handleDeleteWallet(wallet.currencyCode)}>Usuń</button>
+                            </td>
+                        </tr>
+                    ))}
+                </tbody>
+            </table>
             <div>
                 <h3>Wymiana walut</h3>
                 <select value={fromCurrency} onChange={(e) => setFromCurrency(e.target.value)}>

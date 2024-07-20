@@ -14,7 +14,7 @@ const CurrencyHistory = ({ code }) => {
     }, [code]);
 
     return (
-        <div>
+        <div className="main-container">
             <h3>Kursy waluty {code} w przeliczaniu na 1 PLN</h3>
             <ul>
                 {history.map(rate => (

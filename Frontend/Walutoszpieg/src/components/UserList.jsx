@@ -27,17 +27,17 @@ const UserList = ({ onUserSelected }) => {
     };
 
     return (
-        <div>
+        <div className="main-container">
             <h2>Lista użytkowników</h2>
-            <ul>
+            <table className="table-container">
                 {users.map(user => (
-                    <li key={user.id}>
+                    <tr key={user.id}>
                         {user.username} ({user.email})
-                        <button onClick={() => onUserSelected(user)}>Edit</button>
-                        <button onClick={() => handleDelete(user.id)}>Delete</button>
-                    </li>
+                        <button onClick={() => onUserSelected(user)}>Edytuj</button>
+                        <button onClick={() => handleDelete(user.id)}>Usuń</button>
+                    </tr>
                 ))}
-            </ul>
+            </table>
         </div>
     );
 };

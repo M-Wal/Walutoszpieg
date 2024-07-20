@@ -31,7 +31,7 @@ const UserForm = ({ user, onUserCreated, onUserUpdated }) => {
                 type="text"
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
-                placeholder="Username"
+                placeholder="Imię i nazwisko"
             />
             <input
                 type="email"
@@ -43,9 +43,9 @@ const UserForm = ({ user, onUserCreated, onUserUpdated }) => {
                 type="password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                placeholder="Password"
+                placeholder="Hasło"
             />
-            <button type="submit">{user ? 'Update User' : 'Create User'}</button>
+            <button type="submit">{user ? 'Zaktualizuj użytkownika' : 'Dodaj użytkownika'}</button>
         </form>
     );
 };

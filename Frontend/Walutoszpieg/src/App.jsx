@@ -1,23 +1,39 @@
+import './App.css';
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import Main from './pages/Main.jsx';
-import UserManagement from './pages/UserManagement';
-import UserWallet from './components/UserWallet';
-import Currency from "./pages/Currency";
+import UserManagementPage from './pages/UserManagementPage.jsx';
+import CurrencyPage from "./pages/CurrencyPage.jsx";
 import CurrencyDetails from "./components/CurrencyDetails.jsx";
 import TransactionHistory from "./components/TransactionHistory.jsx";
+import UserWalletPage from "./pages/UserWalletPage.jsx";
 
 const App = () => {
     return (
         <Router>
-            <Routes>
-                <Route path="/userwallet" element={<UserWallet userId={1} />} />
-                <Route path="/" element={<Main />} />
-                <Route path="/users" element={<UserManagement />} />
-                <Route path="/currency" element={<Currency />} />
-                <Route path="/currency/:code" element={<CurrencyDetails />} />
-                <Route path="/history" element={<TransactionHistory />} />
-            </Routes>
+            <div className="app">
+                <header className="header">
+                    <nav>
+                        <ul className="nav-links">
+                            <li><Link to="/">Główna</Link></li>
+                            <li><Link to="/users">Zarządzanie użytkownikami</Link></li>
+                            <li><Link to="/wallet">Portfela użytkownika</Link></li>
+                            <li><Link to="/currency"> Lista walut - trendy</Link></li>
+                            <li><Link to="/history">Historia transakcji wymiany walut</Link></li>
+                        </ul>
+                    </nav>
+                </header>
+                <main className="main-content">
+                    <Routes>
+                        <Route path="/" element={<Main />} />
+                        <Route path="/users" element={<UserManagementPage />} />
+                        <Route path="/wallet" element={<UserWalletPage />} />
+                        <Route path="/currency" element={<CurrencyPage />} />
+                        <Route path="/currency/:code" element={<CurrencyDetails />} />
+                        <Route path="/history" element={<TransactionHistory />} />
+                    </Routes>
+                </main>
+            </div>
         </Router>
     );
 };

@@ -32,7 +32,7 @@ const CurrencyConverter = () => {
     };
 
     return (
-        <div>
+        <div className="main-container">
             <h2>Podręczny kalkulator wymiany walut</h2>
             <div>
                 <input
@@ -57,7 +57,7 @@ const CurrencyConverter = () => {
             </div>
             {convertedAmount !== null && (
                 <div>
-                    <h3>Converted Amount: {convertedAmount} {toCurrency}</h3>
+                    <h3>Wynik wymiany: {convertedAmount} {toCurrency}</h3>
                 </div>
             )}
         </div>

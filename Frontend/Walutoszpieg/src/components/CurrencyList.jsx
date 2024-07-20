@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import CurrencyItem from './CurrencyItem';
-import {fetchCurrencyRatesDays} from "../api/api";
+import { fetchCurrencyRatesDays } from "../api/api";
 
 const CurrencyList = () => {
     const [currencies, setCurrencies] = useState([]);

@@ -6,8 +6,8 @@ const CurrencyDetails = () => {
     const { code } = useParams();
 
     return (
-        <div>
-            <h2>Szaczegółowa historia waluty</h2>
+        <div className="main-container">
+            <h2>Szczegółowa historia waluty</h2>
             <CurrencyHistory code={code} />
         </div>
     );
