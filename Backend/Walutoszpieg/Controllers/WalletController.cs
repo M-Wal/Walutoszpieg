@@ -10,12 +10,10 @@ namespace Walutoszpieg.Controllers
     public class WalletController : ControllerBase
     {
         private readonly WalletRepository _walletRepository;
-        private readonly TransactionHistoryRepository _transactionHistoryRepository;
 
-        public WalletController(WalletRepository walletRepository, TransactionHistoryRepository transactionHistoryRepository)
+        public WalletController(WalletRepository walletRepository)
         {
             _walletRepository = walletRepository;
-            _transactionHistoryRepository = transactionHistoryRepository;
         }
 
         [HttpGet("{userId}")]
