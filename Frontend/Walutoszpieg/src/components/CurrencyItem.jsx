@@ -14,16 +14,16 @@ const CurrencyItem = ({ currency }) => {
     return (
         <table className="table-container">
             <tbody >
-                <td>
-                    <tr>{currency.currency} ({currency.code})</tr>
-                    <tr style={style}>
+                <tr>
+                    <td>{currency.currency} ({currency.code}) -</td>
+                    <td style={style}>
                         {lastRate.toFixed(4)} PLN
                         {!isAboveAverage ? ' - rozważ zakup' : ''}
-                    </tr>
-                    <tr>
+                    </td>
+                    <td >
                         <Link to={`/currency/${currency.code}`}>Zobacz historię</Link>
-                    </tr>
-                </td>
+                    </td>
+                </tr>
             </tbody>
         </table>
     );

@@ -30,7 +30,7 @@ const TransactionHistory = () => {
         }
         if (currencyFilter) {
             filtered = filtered.filter(transaction =>
-                transaction.fromCurrency.includes(currencyFilter) ||
+                // transaction.fromCurrency.includes(currencyFilter) ||
                 transaction.toCurrency.includes(currencyFilter)
             );
         }
@@ -61,7 +61,7 @@ const TransactionHistory = () => {
                     </select>
                 </label>
                 <label>
-                    Waluta:
+                    Waluta docelowa:
                     <input
                         type="text"
                         value={currencyFilter}
@@ -81,15 +81,17 @@ const TransactionHistory = () => {
             <table className="table-container">
                 <tbody className="table">
                     <tr>
+                        <th></th>
                         <th>Waluta bazowa</th>
                         <th>Waluta docelowa</th>
                         <th>Kwota</th>
                         <th>Kurs wymiany</th>
                         <th>Data wymiany</th>
                     </tr>
-                
+
                     {filteredTransactions.map(transaction => (
                         <tr key={transaction.id}>
+                            <td>{transaction.userId}</td>
                             <td>{transaction.fromCurrency}</td>
                             <td>{transaction.toCurrency}</td>
                             <td>{transaction.amount.toFixed(2)}</td>

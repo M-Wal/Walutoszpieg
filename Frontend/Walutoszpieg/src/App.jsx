@@ -16,10 +16,10 @@ const App = () => {
                     <nav>
                         <ul className="nav-links">
                             <li><Link to="/">Główna</Link></li>
-                            <li><Link to="/users">Zarządzanie użytkownikami</Link></li>
-                            <li><Link to="/wallet">Portfela użytkownika</Link></li>
                             <li><Link to="/currency"> Lista walut - trendy</Link></li>
+                            <li><Link to="/wallet">Portfela użytkownika</Link></li>
                             <li><Link to="/history">Historia transakcji wymiany walut</Link></li>
+                            <li style={{ color: 'white' }}>Zarządzanie użytkownikami</li>
                         </ul>
                     </nav>
                 </header>

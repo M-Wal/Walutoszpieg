@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="87673fd4-f17d-40d1-adf3-35b409cb48f5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Walutoszpieg/src/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/Walutoszpieg/src/api/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Walutoszpieg/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Walutoszpieg/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Walutoszpieg/src/components/CurrencyItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Walutoszpieg/src/components/CurrencyItem.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

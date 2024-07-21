@@ -157,8 +157,8 @@ const UserWallet = ({ userId }) => {
                     </div>
                 )}
                 {error && (
-                    <div style={{ color: 'red' }}>
-                        <p>{error}</p>
+                    <div>
+                        <p style={{ color: 'red' }}>{error}</p>
                     </div>
                 )}
             </div>
