@@ -1,7 +1,7 @@
 # Walutoszpieg - Sledź i zarządaj walutami w łatwy sposób. Sprawdzaj bieżące kursy aby podjąć właściwe decyzje.
 
 1.	Cel aplikacji: 
-CurrencyExchangeApp ma na celu dostarczenie użytkownikom narzędzi do zarządzania portfelem walutowym, śledzenia aktualnych kursów walut, analizowania krótkoterminowych trendów oraz rejestrowania historii wymian walut. Aplikacja jest przeznaczona zarówno dla osób indywidualnych, jak i małych firm, które chcą efektywnie zarządzać swoimi finansami międzynarodowymi.
+Walutoszpieg ma na celu dostarczenie użytkownikom narzędzi do śledzenia aktualnych kursów walut, analizowania krótkoterminowych trendów, zarządzania portfelem walutowym oraz rejestrowania historii wymian walut. Aplikacja jest przeznaczona zarówno dla osób indywidualnych, które planują swój budżet wakacyjny jak również i małych firm, które chcą efektywnie zarządzać swoimi finansami międzynarodowymi.
 
 2.	Kluczowe funkcje
 • Aktualne kursy walut - Użytkownicy mogą sprawdzić najnowsze kursy walut, które są pobierane bezpośrednio z API Narodowego Banku Polskiego (NBP). Kursy są aktualizowane na bieżąco, co pozwala na podejmowanie świadomych decyzji finansowych.

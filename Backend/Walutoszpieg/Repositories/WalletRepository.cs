@@ -49,7 +49,6 @@ public class WalletRepository
         }
     }
 
-    // New method to convert currencies within the wallet
     public async Task ConvertCurrency(int userId, string fromCurrency, string toCurrency, decimal amount, decimal conversionRate)
     {
         using (var connection = _context.CreateConnection())
@@ -75,17 +74,6 @@ public class WalletRepository
         }
     }
 
-    private async Task<IEnumerable<Rate>> FetchCurrencyRates()
-    {
-        using (var client = new HttpClient())
-        {
-            var response = await client.GetStringAsync("https://api.nbp.pl/api/exchangerates/tables/A?format=json");
-            var data = JsonConvert.DeserializeObject<List<ExchangeRateTable>>(response);
-            var rates = data[0].Rates.ToList();
-            rates.Add(new Rate { Code = "PLN", Currency = "polski złoty", Mid = 1 });
-            return rates;
-        }
-    }
     public async Task AddOrUpdateWallet(Wallet wallet)
     {
         var existingWallet = await GetUserWallet(wallet.UserId, wallet.CurrencyCode);
